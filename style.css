@@ -1,0 +1,217 @@
+
+.container {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.left {
+    margin: 0 auto;
+    padding: 230px 5px 230px 200px;
+    width: 50%;
+    justify-content: center;
+}
+.left svg {
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10));
+}
+.left h2 {
+    color: var(--CL-Black, #000B0A);
+font-family: Brown;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 50px; /* 125% */
+letter-spacing: -0.8px;
+}
+.left p {
+    color: var(--CL-Grey, #737373);
+font-family: Brown;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 156.25% */
+}
+.right {
+    margin: 0 auto;
+    padding: 50px 150px 150px 150px;
+    width: 50%;
+    justify-content: center;
+}
+.card {
+    width: 580px;
+    /* height: 100vh; */
+    max-height: 700px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    padding: 30px;
+}
+label {
+    color: var(--Text-Headings, #011C34);
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.1px;
+padding-bottom: 5px;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.row input, select {
+    width: 238px;
+height: 48px;
+flex-shrink: 0;
+border-radius: 2px;
+border: 1px solid var(--CL-Gray-3, #F0F0F0);
+}
+.row input::placeholder, select::placeholder, select, input[type='date']{
+    color: var(--CL-Grey, #737373);
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.2px;
+}
+.row .first {
+    display: grid;
+    width: 40%;
+}
+.row .second {
+    width: 40%;
+    display: grid;
+}
+.row2 {
+    display: flex;
+    padding: 20px;
+}
+.row2 input, select {
+    width: 508px;
+height: 48px;
+flex-shrink: 0;
+border-radius: 2px;
+border: 1px solid var(--CL-Gray-3, #F0F0F0);
+}
+.row2 .first {
+    display: grid;
+    padding-left: 28px;
+    width: 80%;
+}
+.row2 .first select, input {
+    width: 512px;
+height: 48px;
+flex-shrink: 0;
+border-radius: 2px;
+border: 1px solid var(--CL-Gray-3, #F0F0F0);
+}
+.row2 button {
+    width: 512px;
+height: 48px;
+flex-shrink: 0;
+background: var(--CL-Green, #2EC4B6);
+filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
+margin-left: 30px;
+border: #2EC4B6;
+
+color: var(--Basic-100, #FFF);
+text-align: center;
+font-family: Sofia Pro;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.2px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    color: #000;
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 178.571% */
+}
+
+.footer p span {
+    color: var(--CL-Green, #2EC4B6);
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 25px;
+text-decoration-line: underline;
+}
+
+@media only screen and (max-width: 760px) {
+    .container {
+        width: 375px;
+        height: auto;
+        display: grid;
+    }
+    .left {
+        margin: 0 auto;
+    padding: 80px 45px 30px 190px;
+    width: 330px;
+    justify-content: center;
+    }
+    .left p {
+        color: var(--CL-Grey, #737373);
+font-family: Brown;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 25px; /* 156.25% */
+width: 80%;
+    }
+    .right {
+        margin: 0 auto;
+        /* padding: 30px 190px 150px 230px; */
+        width: 330px;
+        justify-content: center;
+        height: 100vh;
+    }
+    .card {
+        display: block;
+        width: 327px;
+        max-height: 1080px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: #FFF;
+        box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+        padding: 30px 25px 30px 50px;
+    }
+    .row {
+        display: grid;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .row2 {
+        display: grid;
+        padding: 20px;
+    }
+    .row .first, .row .second, .row2 button {
+        display: grid;
+        padding: 20px;
+    }
+    .row2 input, select, .row2 .first select, input {
+        width: 238px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid var(--CL-Gray-3, #F0F0F0);
+    }
+    .row2 button {
+        width: 245px;
+    }
+}
